@@ -3,8 +3,7 @@
 }
 
 body {
-  font-family: "Open Sans",
-  sans-serif; 
+  font-family: 'IM Fell English', serif;
   font-size: 20px;
   color: #444;
   text-align: center;
@@ -12,12 +11,43 @@ body {
   height: 100%;
   margin: 0;
 }
+h1, h2, h3 {
+  font-family: 'Charmonman', cursive;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 38px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+h1:after, h2:after {
+  border-bottom: 1px solid black;
+  content: '';
+  display: block;
+  margin-left: 20%;
+  width: 60%;
+}
 h3 {
   margin-top: 20px;
   margin-bottom: 0px;
+  font-size: 26px;
 }
 p {
   font-size: 18px;
+}
+a {
+  color: #444;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 7px;
+}
+a:hover {
+  color: darkred;
+  border: 1px solid darkred;
 }
 /*------------- header -------------*/
 /* header {
@@ -26,7 +56,7 @@ p {
 .hero-image {
   background-image: url('../images/sakura.jpg');
   width: 100%;
-  height: 400px;
+  height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,6 +76,10 @@ p {
   /* padding: 20px; */
   text-align: center;
 }
+.hero-sub {
+  font-family: 'IM Fell English', serif;
+  font-weight: 100;
+}
 /*------------- nav -------------*/
 .Navbar,
 footer {
@@ -56,7 +90,12 @@ footer {
   top: 0;
   display: flex;
   padding: 16px;
-}   
+  z-index: 100;
+}  
+.Navbar__Link-brand {
+  font-weight: 900;
+  font-size: 22px;
+} 
 .Navbar__Link {
   padding-left: 10px;
 }
@@ -69,10 +108,10 @@ footer {
 .Navbar__Link-toggle {
   display: none;
 }
-.Navbar__Items .Navbar__Link:hover {
+/* .Navbar__Items .Navbar__Link:hover {
   background-color: black;
   color: white;
-}
+} */
 @media only screen and (max-width: 700px) {
   .Navbar__Items,
   .Navbar {
@@ -108,13 +147,28 @@ section {
   padding: 6% 0;
   background-color: #bbb;
 }
-  
+.section {
+  margin-top: 50px;
+  border: 1px solid black;
+}
 section:nth-child(even) {
   background-color: #ddd;
 }
+#contact {
+  margin-right: 10px;
+}
+#testimonials {
+  margin-bottom: 50px;
+}
 /*---------- background ----------*/
+#background {
+  margin-top: 50px;
+}
 .background-header-wrapper {
   padding: 15px;
+}
+.background-header-border {
+  padding: 10px;
   border: 1px solid black;
 }
 .background-header-values {
@@ -138,7 +192,31 @@ section:nth-child(even) {
     flex-basis: 50%;
   }
 }
+.me-wrapper {
+  max-height: 400px;
+  height: 100%;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 60%;
+  position: relative;
+  display: inline-block;
+}
+.me-wrapper .meTwo {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.me-wrapper:hover .meTwo {
+  display: inline;
+}
 .me {
+  border-radius: 60%;
+}
+/* .me {
   display: block;
   max-height: 400px;
   height: 100%;
@@ -147,7 +225,7 @@ section:nth-child(even) {
   margin-right: auto;
   margin-top: 20px;
   border-radius: 60%;
-}
+} */
 .bio-wrapper {
   margin: 15px;
 }
@@ -155,7 +233,23 @@ p {
   text-align: left;
 }
 /*---------- contact ----------*/
-
+.cont-link {
+  border: 0;
+}
+.cont-link:hover {
+  border: 0;
+}
+.contact-type {
+  text-align: left;
+  margin-top: 30px;
+}
+.contact-info {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.cont-col {
+  flex-basis: 50%;
+}
 /*---------- proficiencies ----------*/
 .logos {
   display: block;
@@ -248,7 +342,7 @@ p {
   bottom: 0;
   width: 100%;
   padding: 10px;
-  margin-top: 20px;
+
 } 
 .foot-col {
   flex-basis: 33%;

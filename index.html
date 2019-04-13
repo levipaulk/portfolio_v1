@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML wireframe</title>
+    <title>Levi Paulk Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman|IM+Fell+English" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/grid.css">
@@ -13,7 +14,7 @@
         <div class="hero-image">
             <div class="hero-text">
                 <h1>Levi Paulk</h1>
-                <h3>The aspiring Web Developer that used to teach English in Japan.</h3>
+                <h3 class="hero-sub">The aspiring Web Developer that used to teach English in Japan.</h3>
                 <!-- <h3>This is a test!!!</h3> -->
             </div>
         </div>
@@ -21,7 +22,7 @@
     <div class="nav-body-wrapper">
         <div class="Navbar">
             <div class="Navbar__Link Navbar__Link-brand">
-                Website title
+                Levi Paulk's
             </div>
             <div class="Navbar__Link Navbar__Link-toggle">
                 <i class="fa fa-bars"></i>
@@ -46,36 +47,43 @@
         </div>
 
         <main role="main" class="">
-            <section id="background">
+            <section id="background" class="section">
                 <div class= "row section-title">
                     <h2 class="col section-title">Background</h2>
                 </div>
                 <div class="row background-header-wrapper">
-                    <div class="col-2 background-header">
-                        <div class="background-header-values bghn">Levi Paulk</div>
-                        <div class="background-header-keys">Name</div>
-                    </div>
-                    <div class="col background-header bgh">
-                        <div class="background-header-values">Web Dev</div>
-                        <div class="background-header-keys">Class</div>
-                    </div>
-                    <div class="col background-header bgh">
-                        <div class="background-header-values">Human</div>
-                        <div class="background-header-keys">Race</div>
-                    </div>
-                    <div class="col background-header bgh">
-                        <div class="background-header-values">Lawful Neutral</div>
-                        <div class="background-header-keys">Alignment</div>
-                    </div>
-                    <div class="col background-header bgh">
-                        <div class="background-header-values">3 weeks</div>
-                        <div class="background-header-keys">Experience</div>
+                    <div class=" row background-header-border">
+                        <div class="col-2 background-header">
+                            <div class="background-header-values bghn">Levi Paulk</div>
+                            <div class="background-header-keys">Name</div>
+                        </div>
+                        <div class="col background-header bgh">
+                            <div class="background-header-values">Web Dev</div>
+                            <div class="background-header-keys">Class</div>
+                        </div>
+                        <div class="col background-header bgh">
+                            <div class="background-header-values">Human</div>
+                            <div class="background-header-keys">Race</div>
+                        </div>
+                        <div class="col background-header bgh">
+                            <div class="background-header-values">Lawful Neutral</div>
+                            <div class="background-header-keys">Alignment</div>
+                        </div>
+                        <div class="col background-header bgh">
+                            <div class="background-header-values">3 weeks</div>
+                            <div class="background-header-keys">Experience</div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col bio-wrapper"><img src="images/meOne.jpg" alt="Levi Paulk" class="me"></div>
+                    <div class="col bio-wrapper">
+                        <div class="me-wrapper">
+                            <img src="images/meOne.jpg" alt="Levi Paulk" class="me meOne">
+                            <img src="images/meTwo.jpg" alt="Levi Paulk" class="me meTwo">
+                        </div>
+                    </div>
                     <div class="col-2 bio-wrapper">
-                        <h3>Biography</h3>
+                        <h3 class="sub-section-title">Biography</h3>
                         <p>I started my professional career by teaching English in Japanese public schools for four years.  I am a current student of the full-time Immersive Engineering Bootcamp at Thinkful. Like many people, I came out of college with no idea what sort of career I wanted nor my motivation.</p>
                         <p>What draws me to programming is the creation aspect.  Starting from nothing, planning out your project, layering on each component and then seeing your hard work congeal into a tangible object.  As a tone-deaf creative individual that can't draw, this motivates me like nothing else.</p>
                         <p>When I'm not coding, I'm a freelance nerd. I enjoy RPG video games, tabletop RPGs, fantasy novels/comics, and long walks.  If you don't know that RPG stands for, just realize that I'm a nerd.</p>
@@ -83,30 +91,36 @@
                 </div>
             </section>
             <div class="row">
-                <section id="contact" class="col">
+                <section id="contact" class="col section">
                     <div class= "row section-title">
                         <h2 class="col section-title">Contact</h2>
                     </div>
                     <div class="">
-                        <div class="" class="col">
-                            <a href="col">
-                                <img src="images/email.png" alt="email" class="logos">
-                            </a>
-                        </div>
-                        <div class="row" class="">
-                            <a href="" class="col">
-                                <img src="images/githubLogo.png" alt="GitHub" class="logos">
+                        <div class="row">
+                            <img src="images/email.png" alt="Email logo" class="logos">
+                            <a href="mailto:levipaulk%40gmail%2Ecom?subject=Hello%20I%20like%20your%20portfolio" target="_blank" class="cont-col cont-link">
+                                <h3 class="contact-type row">Email:</h3>
+                                <p class="contact-info row">levipaulk@gmail.com</p>
                             </a>
                         </div>
                         <div class="row">
-                            <a href="" class="col">
-                                <img src="images/linkedin.png" alt="LinkedIn" class="logos">
+                            <img src="images/githubLogo.png" alt="GitHub logo" class="logos">
+                            <a href="https://github.com/levipaulk" target="_blank" class="cont-col cont-link">
+                                <h3 class="contact-type row">GitHub</h3>
+                                <p class="contact-info row">levipaulk</p>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <img src="images/linkedin.png" alt="LinkedIn logo" class="logos">
+                            <a href="https://www.linkedin.com/in/levi-paulk-74042753/" target="_blank" class="cont-col cont-link">
+                                <h3 class="contact-type row">LinkedIn</h3>
+                                <p class="contact-info row">levipaulk-74042753</p>
                             </a>
                         </div>
                     </div>
                 </section>
 
-                <section id="proficiencies" class="col-2">
+                <section id="proficiencies" class="col section">
                     <div class= "row section-title">
                         <h2 class="col section-title">Proficiencies</h2>
                     </div>
@@ -127,7 +141,7 @@
                 </section>
             </div>
 
-            <section id="exploits">
+            <section id="exploits" class="section">
                 <div class= "row section-title">
                     <h2 class="col section-title">Exploits</h2>
                 </div>
@@ -136,11 +150,11 @@
                         <img src="images/quiz_app_screen_shot.png" alt="Quiz App Screenshot" class="exploit-screenshots">
                     </div>
                     <div class="col-2 exploit-proj-desc-wrapper">
-                        <h3>Quiz App</h3>
+                        <h3 class="sub-section-title">Quiz App</h3>
                         <p>An Open Trivia powered quiz application.  The user can take a short quiz, answering random and non-repetitive questions. The user can repeat the quiz multiple times and the app retains their high score. This was a three-day, two-person project and my third time using a 3rd party API to build a functional application.</p>
                         <div class="row">
-                            <div class="col"><a href="">Live</a></div>
-                            <div class="col"><a href="">Code</a></div>
+                            <div class="col"><a href="https://thinkful-ei-cheetah.github.io/quiz-app-cristian-levi/">Live</a></div>
+                            <div class="col"><a href="https://github.com/thinkful-ei-cheetah/quiz-app-cristian-levi">Code</a></div>
                         </div>
                         <div class="row">
                             <div class="col ex-col"><img src="images/htmlLogo.png" alt="HTML5" class="exploit-logos"></div>
@@ -151,9 +165,29 @@
                         </div>
                     </div>
                 </div>
+                <div class="row exploit-proj-wrapper">
+                    <div class="col">
+                        <img src="images/bookmark_app_screen_shot.png" alt="Bookmark App Screenshot" class="exploit-screenshots">
+                    </div>
+                    <div class="col-2 exploit-proj-desc-wrapper">
+                        <h3 class="sub-section-title">Bookmark App</h3>
+                        <p>An online application where users can create a list of bookmarks, including site name, url, rating and description.  The user can add, edit, delete and filter their bookmarks by user rating. The app uses a Thinkful api that stores the bookmarks on a corresponding server. This was a four-day solo project and my first time creating an application from scratch.</p>
+                        <div class="row">
+                            <div class="col"><a href="https://thinkful-ei-cheetah.github.io/levi_paulk-bookmarks-app/">Live</a></div>
+                            <div class="col"><a href="https://github.com/thinkful-ei-cheetah/levi_paulk-bookmarks-app">Code</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col ex-col"><img src="images/htmlLogo.png" alt="HTML5" class="exploit-logos"></div>
+                            <div class="col ex-col"><img src="images/cssLogo.png" alt="CSS" class="exploit-logos"></div>
+                            <div class="col ex-col"><img src="images/javascript.png" alt="JavaScript" class="exploit-logos"></div>
+                            <div class="col ex-col"><img src="images/jqueryLogo.png" alt="jQuery" class="exploit-logos"></div>
+                            <div class="col ex-col"><img src="images/Thinkful.png" alt="Thinkful's Bookmark API" class="exploit-logos"></div>
+                        </div>
+                    </div>
+                </div>
             </section>
             
-            <section id="testimonials">
+            <section id="testimonials" class="section">
                 <div class= "row section-title">
                     <h2 class="col section-title">Testimonials</h2>
                 </div>
@@ -174,9 +208,7 @@
     </div>
     <footer role="content-info" class="footer">
         <div class="row">
-            <a href="" class="col foot-col">Email</a>
-            <a href="" class="col foot-col">GitHub</a>
-            <a href="" class="col foot-col">LinkedIn</a>
+            <h3 class="col">Thank you for your time</h3>
         </div>
     </footer>
     <script src="index.js"></script>
