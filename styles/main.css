@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
-  transition: all .8s ease;
+  transition: all .4s ease;
+}
+
+*::selection{
+  background: #F5D5DF;
 }
 
 body {
@@ -45,9 +49,10 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: rgb(128, 126, 126);
+  /* color: rgb(128, 126, 126); */
+  color: rgba(37, 28, 29, 1);
 }
-a:hover {
+a:hover, a:focus {
   background-color: rgba(37, 28, 29, 1);
   border: 2px solid rgba(37, 28, 29, 1);
   border-radius: 30px;
@@ -82,7 +87,7 @@ a:hover {
   padding: 20px;
   text-align: center;
 }
-.hero-text:hover {
+.hero-text:hover, .hero-text:focus {
   box-shadow: 5px 5px rgba(55, 55, 55, 0.8);
 }
 .hero-text h1::after {
@@ -167,9 +172,10 @@ footer {
   /* border-radius: 2px; */
 }
 .scroll:visited {
-  color: rgb(204, 202, 202);
+  /* color: rgb(204, 202, 202); */
+  color: var(--white);
 }
-.scroll:hover {
+.scroll:hover, .scroll:focus {
   border: 2px solid #ffffff;
   background-color: #ffffff;
   color: rgba(37, 28, 29, 1);
@@ -196,7 +202,7 @@ main {
   margin-right: 10px;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
-.section:hover {
+.section:hover, .section:focus {
   box-shadow: 10px 10px rgba(55, 55, 55, 0.8);
 }
 /* section:nth-child(even) {
@@ -258,7 +264,7 @@ main {
   left: 0;
   z-index: 99;
 }
-.me-wrapper:hover .meTwo {
+.me-wrapper:hover .meTwo, .me-wrapper:focus .meTwo {
   display: inline;
 }
 .me {
@@ -417,7 +423,7 @@ p {
   margin-bottom: 10px;
   font-size: 20px;
 }
-.quote:hover {
+.quote:hover, .quote:focus {
   font-size: 22px;
 }
 .quoted {
